@@ -204,3 +204,4 @@ function isevenisodd(arr){
 let numbe=[2,4,6,9,13]
 
 console.log(isevenisodd(numbe))
+k
