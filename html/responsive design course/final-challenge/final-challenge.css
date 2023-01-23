@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+.mont{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 400;
+}
+.oswald{
+    font-family:  'Oswald', sans-serif;
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.section-1-h1{
+    color: #fff;
+    font-weight: bold;
+    font-family:  'Oswald', sans-serif;
+    font-size: 3.25em;
+   
+}
+.brown-title-text{
+    color: #A59678;
+}
+nav{
+display: flex;
+flex-direction: column;
+    background-color: #2E323F;
+    font-family:  'Oswald', sans-serif;
+}
+.nav-item{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8em;
+}
+.nav-item:hover{
+    opacity: 0.75;
+}
+.nav-list+.nav-list{
+    margin-top: 2em;
+
+}
+.nav-flex{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.logo{
+  
+    align-self: center;
+   width: 30%;
+   
+   margin-bottom: 1.5em;
+}
+
+.sign-up{
+    background-color: #A59678;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 999px;
+    padding: 0.30em 0.25em;
+    line-height: 20px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+/*Section-1*/
+
+.section-1{
+    background-color: #3B4050;
+    padding: 1.5em 0;
+    padding-left: 1em;
+}
+
+.section-1-text{
+    
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.learn-btn{
+    background-color: #A59678;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 100px;
+    padding: 0.25em 0.75em;
+    white-space: nowrap;
+}
+.learn-btn:hover{
+    opacity: 0.75;
+}
+
+/*section-2*/
+.section-2{
+   background-color: #fff;
+   padding: 1.2em;
+}
+.section-2-title{
+    color: #A59678 ;
+    font-family:  'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.875em;
+
+}
+.section-2-text-body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.125em;
+    padding-left:4em;
+    padding-right: 4em;
+}
+.section-2-text-body,.section-2-title{
+    text-align:center;
+   
+   
+}
+
+/*section-3*/
+.section-3{
+    padding: 1.2em;
+}
+.section-3-main{
+    display: flex;
+    flex-direction: column;
+}
+.section-3-title-main{
+    color:#A59678 ;
+    font-family:  'Oswald', sans-serif;
+    font-size: 2.25em;
+    
+}
+.section-3-main-body{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+.section-3-aside{
+    color:#fff
+}
+.final-image{
+    width: 90%;
+
+margin-bottom: 2.5em;
+align-self: center;
+}
+
+.aside-text{
+    background-color:#3B4050;
+    padding: 1.2em;
+    text-align: center;
+    padding: 3em 1em;
+}
+.aside-text+.aside-text{
+    margin-top: 1em;
+}
+.aside-title{
+    font-size: 1.875em;
+   
+}
+.aside-text-body{
+    font-size:1.125em
+}
+
+/*Footer*/
+footer{
+background-color: #3B4050;
+padding: 2em 0;
+}
+
+.footer-title{
+    color: #fff;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.company-text-title{
+    color: #A59678;
+    font-size: 1.3125em ;
+    font-weight: bold;
+    padding-left: 2em;
+    margin-top: 1em;
+   
+}
+.company-text-body{
+    font-size: 1em;
+    padding: 1em;
+    color: #fff;
+}
+.footer-nav-title{
+    color: #A59678;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.3125em;
+    text-align: center;
+}
+.footer-nav-item{
+    color: #fff;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+}
+.footer-nav-item:hover{
+    opacity: 0.75;
+}
+
+
+/*medium-screens*/
+@media (min-width:700px) {
+    .nav-list{
+        display:flex;}
+        nav{
+            display: flex;
+            padding: 0.7em 0;
+        }
+        .nav-item{
+            display: flex;
+            margin-left: 1em;
+            margin-bottom: 0;
+        }
+    .logo{
+        display: flex;
+        width: 10%;
+        margin: 0;
+    }
+    .nav-flex{
+        display: flex;
+        flex-direction: row;
+      
+        justify-content: space-between;
+    }
+    .nav-link{
+        display: flex;
+    }
+
+    .nav-list+.nav-list{
+        margin-top: 0;
+        margin-left: 1em;
+    }
+    .nav-list-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .sign-up{
+        margin-bottom: 0;
+    }
+
+    /*section-1 medium screens*/
+    .section-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 7em;
+        padding-left: 1.8em;
+
+    }
+    .section-1-text{
+        
+    }
+    .section-1-h1{
+        padding-left: 1.8em;
+        margin-right: 2.5em;
+    }
+
+    /*Section 2*/
+    .section-2{
+        display: flex;
+    }
+    .section-2-text-body,.section-2-title{
+        text-align:center;
+       
+       
+    }
+    .section-2-text-body{
+        padding: 1em;
+       
+    }
+
+    /*section-3*/
+    .section-3-aside{
+        display: flex;
+        margin-top: 1em;
+    }
+    .section-3-main{
+        padding: 2em;
+    }
+    .aside-text{
+        margin-right: 2em;
+      
+    }
+
+    .aside-text+.aside-text{
+        margin-top: 0;
+    }
+    .final-image{
+        width: 70%;
+    }
+
+    /*Footer*/
+    .footer-flex{
+        display: flex;
+        
+    }
+    .company-text-body{
+        width: 60%;
+        padding-left: 2em;
+        
+    }
+    .footer-nav{
+        display: flex;
+        width: 60%;
+    }
+    .footer-nav-item{
+        margin-bottom: 1.5em;
+        width: 100%;
+    }
+    .footer-nav-1{
+        margin-right: 5em;
+    }
+    .footer-nav-2{
+        margin-right: 5em;
+    }
+        
+    
+    .footer-nav-3{
+        margin-right: 9em;
+    }
+    .footer-nav-title{
+        margin-bottom:1em;
+    }
+    .footer-title{
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width:1000px){
+.section-3{
+display: flex;
+}
+.section-3-main{
+    width: 70%;
+    padding: 4em;
+}
+.section-3-aside{
+    display: block;
+    width: 30%;
+    padding:0.5em ;
+}
+.aside-text{
+    margin-right: 0;
+    margin-bottom: 2em;
+}
+
+}

@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 3.75em;
+    color: #824936;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.info-text-primary{
+    
+     text-align: center;
+     font-size: 1.1em;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 100;
+     letter-spacing: 10px;
+ }
+.info-1{
+    width: 100%;
+    background-color: #F3EED9;
+    max-width: 1128px;
+   
+    text-align: center;
+    height: 80vh;
+    align-content: center;
+    justify-content: center;
+    
+  
+    
+}
+.first-h1{
+/*overflow: hidden;*/
+white-space: pre-wrap;
+
+}
+/*section 2*/
+.info-2{
+    padding: 3em;
+}
+.quality-designs{
+    color: #824936;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+    
+}
+.info-text-2{
+    width: 50%;
+    font-size:1.2em;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 1.5em 2em;
+}
+
+/*Section 3*/
+.info-3{
+    background-color: #222C2A;
+    color: #fff;
+    
+    padding: 6em;
+    
+}
+.info-text-3{
+   margin-left: 4em;
+   padding-left: 2em;
+   padding-right: em;
+}
+.info-3-para{
+   font-size: 1.2em;
+   margin-top: 1em;
+   font-family:'Roboto', sans-serif; ;
+}
+.horizon-1{
+    width: 40%;
+}
+h2{
+    font-size: 2em;
+    font-family:'Playfair Display', sans-serif ;
+}
+
+/*Section 4*/
+.info-4{
+background-color: #824936;
+color: #fff;
+padding:6em ;
+
+
+}
+.info-4-body{
+    margin-left: 4em;
+    width: 100%;
+    
+}
+.info-text-4{
+    
+    font-size: 1.25em;
+  
+  margin-right: 2em;
+ padding: 1em 0em 2em 0em;
+
+    
+}
+.horizon-2{
+    width: 50%;
+    font-family:'Roboto', sans-serif;
+   
+    margin-left: 3em;
+}
+.info-title-4{
+ 
+   
+}
+
+@media(max-width:600px){
+    .first-h1{
+        font-size: 2.5em;
+    }
+    .info-2{
+        padding: 1em;
+    }
+    .info-text-2{
+        padding: 0;
+        width: 90%;
+        font-size:1.2em;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        
+    }
+    .info-text-2-1{
+        margin-bottom: 20px;
+    }
+
+    .info-text-primary{
+        font-size: 0.9em;
+    }
+    .row{
+        flex-direction: column;
+    }
+    
+
+    
+}

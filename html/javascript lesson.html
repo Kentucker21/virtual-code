@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/js-lesson.css">
+    <script type="module" defer src="../js/learning-javascript/js course part 5 ends with es6 modules.js"></script>
+    <title>javascript lesson</title>
+</head>
+<body>
+    <label for="" id="mylabel">Enter your name</label>
+    <br>
+    <input id="mytext" type="text">
+    <br>
+    <button type="submit" id="mybtn">submit</button>
+    <br>
+
+    <label for="">Enter num1</label>
+    <br>
+    <input id="num-1" type="number">
+    <br>
+    <button type="submit" id="mybtn-1">submit</button>
+    <br>
+    <label for="">Enter num2</label>
+    <br>
+    <input id="num-2" type="number">
+    <br>
+    <button type="submit" id="mybtn-2">submit</button>
+
+    <section class="tax-section">
+        <h1 class="tax-title">Tax calculator</h1>
+        <div class="item-wrapper">
+        <h2>Enter name of the Item</h2>
+        <input type="text" id="item" placeholder="enter item">
+        <button id="item-btn" type="submit">submit</button>
+    </div>
+        <div class="tax-wrapper">
+        <h2>Enter item Price</h2>
+        <input type="text" id="item-price" placeholder="enter item price">
+        <button id="item-price-btn" type="submit">submit</button>
+    </div>
+     <div class="result-wrapper">
+        <div id="newprice"></div>
+
+       
+        <div id="taxpaid-1"></div>
+    </div>
+    </section>
+
+    <section class="hypotenuse-section">
+        <h1 class="A-title">Hypotenuse Calculator</h1>
+        <div class="A-wrapper">
+        <h2>Enter A</h2>
+        <input type="text" id="Side-A" placeholder="enter side A">
+        <button id="A-btn" type="submit">submit</button>
+    </div>
+        <div class="B-wrapper">
+        <h2>Enter B</h2>
+        <input type="text" id="Side-B" placeholder="enter Side B">
+        <button id="B-btn" type="submit">submit</button>
+    </div>
+     <div class="Hypo-wrapper">
+        <div id="Hypo-result"></div>
+    </div>
+    </section>
+
+    <section class="counter-section">
+        <div class="counter-wrapper">
+        <h1 class="counter-title">Counter</h1>
+        <div class="counter" id="the-counter">0</div>
+        <span class='in-dec-btns'>
+        <button class="counter-button-decrease" id="decrease-btn">-</button>
+        <button class="counter-button-reset" id="reset-btn">Re</button>
+        <button class="counter-button-increase" id="increase-btn">+</button>
+    </span>
+</div>
+    </section>
+
+    <section class="random-section">
+        <h1 class="rand-title">Random number generator</h1>
+        <div class="rand-wrapper">
+        <label class="rand-1"  for="random-1" id="random-1"></label>
+        <label class="rand-2" for="random-2" id="random-2"></label>
+        <button class="gen-btn" id="generate-btn">generate</button>
+    </div>
+    </section>
+
+    <section class="checkbos-section">
+        <label for="myCheckBox">subscribe</label>
+        <input type="checkbox" id="myCheckBox">
+        <button id="myButton">submit</button>
+    </section>
+
+    <section class="radio-section">
+        <label for="visaBtn">Visa</label>
+        <input type="radio" id="visaBtn" name="card">
+        <label for="mastercardBtn">Mastercard</label>
+        <input type="radio" id="mastercardBtn" name="card">
+        <label for="payPalBtn">Paypal</label>
+        <input type="radio" id="payPalBtn" name="card">
+    </section>
+
+    <section class="rectangle-rows-col">
+        <label for="rectangle" id="myRectangle"></label>
+    </section>
+
+    <section id="cart-example">
+ <label for="" id="myCartLabel"></label>
+    </section>
+
+    <section class="number-guessing-game">
+        <h1 class="guessing-title">Kenny's number game</h1>
+<label for="number-guessed" class="guess-label">Guess a number</label>
+  <input type="text" name="number-guessed" id="number-input" class="guess-textbar">
+  <button class="enter-guess-btn" id="guess-btn"  type="submit" >Enter guess</button>
+    <p id="result-of-guess" class="result-for-guess"></p>
+    </section>
+
+    <section class="temperature-converter">
+        <h1>Temperature converter</h1>
+
+        <h2>Enter a temperature</h2>
+        <input type="text" id="entered-temp">
+        <h2> Select a unit</h2>
+        
+        <input type="radio" id="celsius-unit" class="celsius-radio-btn" name="temp-radio">
+        <label for="celsius-unit" class="celsius-label">Celsius</label>
+        <br>
+       
+        <input type="radio" id="fahrenheit-unit" class="fahrenheit-radio-btn" name="temp-radio">
+        <label for="fahrenheit-unit" class="fahrenheit-label">Fahrenheit</label>
+        <br>
+        <input type="button" value="submit" id="submit-temp-btn" class="temp-submit">
+        <p id="conversion-result"></p>
+    </section>
+
+    <section class="Callback-section">
+        <label for="" id="callback"></label>
+    </section>
+
+    <section class="function-expressions">
+        <label for="" id="counter">0</label>
+       <button id="dec-btn" >decrease</button>
+       <button id="inc-btn" >increase</button>
+    </section>
+
+    <input type="text" id="objtext">
+    <input type="button" value="add" id="objbtn">
+
+    <section class="setTImeoutsection">
+        <input type="button" value="buy" id="Buy">
+    </section>
+
+    <section class="dateobjectsection">
+        <label for="" id="DateandTime"></label>
+
+    </section>
+
+    <section id="Myclocksection">
+        <label for="" id="myclock"></label>
+    </section>
+
+    <section id="timeinterval">
+        <label for="" id="entervalue">enter a number in 10 seconds</label>
+        <input type="text" name="" id="">
+        <div id="timeup"></div>
+    </section>
+    
+    <section class="download-section">
+        <div class="spinner1" ></div>
+        <a href="../html/css.png" download="this" class="downloader" >download</a>
+    </section>
+
+   
+    <section class="selling-items-section">
+        <div class="item-section">
+
+            <div class="item-1 every-item" id="firstpic">
+            <img src="" alt="" class="item-pic" id="item-1-pic-id">
+          <div class="item-name" id="item-1-name-id">YEEZY FOAM RNNR ARARAT</div>
+          <div class="black-line"></div>
+
+          <div class="price-wrapper">
+            <p class="pre-price-1 pre-price">$189</p>
+            <p class="item-price" id="item-1-price-id">  $89</p>
+          </div>
+         
+          <button class="item-status" id="item-1-status-id" name="status">Add to cart...</button>
+        </div>
+
+        <div class="item-2 every-item">
+         <img src="../html/yeezy.jpg" alt="" class="item-pic" id="item-2-pic-id">
+          <div class="item-name" id="item-2-name-id">YEEZY FOAM RNNR ARARAT</div>
+          <div class="black-line"></div>
+          <div class="price-wrapper">
+            <p class="pre-price-2 pre-price">$189</p>
+            <p class="item-price" id="item-2-price-id">  $89</p>
+          </div>
+          <button class="item-status" id="item-2-status-id" name="status">Add to cart...</button>
+        </div>
+
+        <div class="item-3 every-item">
+         <img src="../html/foams-brown.webp" alt="" class="item-pic" id="item-3-pic-id">
+          <div class="item-name" id="item-3-name-id">YEEZY FOAM RNNR ARARAT</div>
+          <div class="black-line"></div>
+          
+          <div class="price-wrapper">
+            <p class="pre-price-3 pre-price">$189</p>
+            <p class="item-price" id="item-3-price-id">  $89</p>
+          </div>
+          <button  class="item-status" id="item-3-status-id" name="status">Add to cart...</button>
+
+        </div>
+
+         </div>
+      </section>
+      
+</body>
+
+
+<script src="../js/learning-javascript/js full course part 1 end-return.js"></script>
+<script src="../js/learning-javascript/js course part 2 end-arrays.js"></script>
+<script src="../js/learning-javascript/js course part 3 end-maps.js"></script>
+<script src="../js/learning-javascript/js course part 4 end-anon-obj.js"></script>
+<script src="../js/learning-javascript/js course part 6.js"></script>
+</html>

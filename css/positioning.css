@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    margin-top: 40px;
+    border: 2px solid blue;
+   display: flex;
+    padding: 3em;
+    gap:3em;
+}
+.text-prison{
+    border: 2px solid red;
+    position: relative;
+    display: flex;
+    
+}
+.about-me{
+ 
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.text{
+    max-width: 100%;
+    width:1000px;
+    color: #f5f5f5;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+    background:rgba(0,0,0,0.5);
+    margin: 0 auto;
+    text-align: center;
+   /* top: 60px;
+    left: px;
+    right: 140px;
+    color:red;*/
+}
+
+.text-2{
+    font-size:0.4m;
+   
+    position: absolute ;
+   width: 100%;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color:red;
+    text-align: center;
+   
+    text-overflow:ellipsis;
+    height: 100%;
+   
+}
+
+
+.deco{
+    margin-top: 80px;
+    width:100%;
+    position: relative;
+    
+    min-height: 180px;
+    margin: 0 auto;
+    object-fit: fill;
+
+    
+}
+
+.text-prison-2{
+    border: 2px solid orange;
+    position: relative;
+    display: flex;
+}

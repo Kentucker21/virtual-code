@@ -1,0 +1,38 @@
+h1 {background: black;
+    color:white;
+    position: relative;
+    font-size: xx-large;
+}
+h3 { background-color: black;
+    color: white;
+    
+}
+.ted{
+    font-style: italic;
+}
+nav {color: red; ;
+    font-size: medium;
+    font-family: inherit;
+    width: 99%;
+    height: 50px;
+    background-color: gray;
+    line-height: 50px;
+    padding-left: 0% 100;
+    position: relative;
+    border: 10px;
+}
+nav ul {
+    float:right 100%
+
+}
+nav ul li{
+    display: inline;
+     word-spacing: 10px;
+     text-decoration:none;
+}
+nav ul li a {font-size: 18px;
+    text-transform: uppercase;
+    text-decoration:none
+    
+   
+}

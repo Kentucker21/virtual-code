@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+.conduent-img{
+    width: 200px;
+    max-width: 20%;
+}
+.test-body{
+    background-color: #364eed;
+    width: 100%;
+    padding:0;
+    height: 80vh;
+    display: flex;
+    
+}
+
+.radio-btn-label{
+    /*margin-top: 2em;*/
+    font-weight: bold;
+    font-size: 1.06em;
+    
+   
+}
+.radio-btns{
+   
+    display: flex;
+    flex-direction: column;
+
+}
+.radio-btn-4th{
+    
+    
+}
+.radio-section{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.test-card{
+    background-color:#fff;
+    width: 50%;
+    margin: 0 auto;
+   align-self: center;
+   padding: 3.7em;
+   border-radius: 1em;
+}
+
+.answer-complete{
+    color: #fff;
+    background-color: orangered;
+    padding:0.80em 1em ;
+    font-weight: 700;
+}
+.answer-complete:hover,.skip-question:hover{
+    opacity: 0.75;
+}
+
+.skip-question{
+    background-color: #fff;
+    padding:0.80em 1em ;
+    font-weight: 700;
+}
+
+.card-buttons{
+    display: flex;
+    justify-content: space-between;
+}

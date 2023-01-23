@@ -1,0 +1,249 @@
+label{
+    font-size: 2em;
+}
+input{
+    font-size: 1.5em;
+    width: 80%;
+}
+button{
+    font-size: 1.3em;
+}
+
+section{
+    background-color: grey;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2em;
+
+}
+h1,h2{
+    color: #fff;
+}
+#taxpaid-1,#newprice,#Hypo-result{
+    background-color: aqua;
+    font-size: 1.5em;
+   
+}
+.tax-title,.A-title{
+    text-align: center;
+    font-size:2em
+}
+
+.item-wrapper,.A-wrapper{
+    width: 75%;
+    margin: 0 auto;
+    
+}
+.tax-wrapper,.B-wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+.result-wrapper,.Hypo-wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+
+/*COUNTER*/
+.counter-title,.rand-title{
+    font-size: 2.5em;
+    text-align: center;
+}
+.counter-wrapper{
+  margin: 0 auto;
+ 
+}
+.counter-section{
+    display: flex;
+    padding-bottom: 5em;
+    margin-top: 2em;
+}
+
+.counter{
+    font-size:3em;
+    text-align: center;
+}
+.in-dec-btns{
+    margin-left: 0.7em;
+    font-size: 1.5em;
+}
+.counter-button-increase,.counter-button-decrease{
+    padding: 0.25em  0.75em;
+}
+
+/*Random generator*/
+.random-section{
+    padding-bottom: 5em;
+    margin-top: 2em;
+}
+
+.gen-btn{
+    font-size: 1.5em;
+    padding: 0.25em  0.75em;
+    border-radius:80px;
+    width: 26%;
+    margin: 0 auto;
+}
+.rand-1,.rand-2{
+    text-align: center;
+}
+.rand-wrapper{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.radio-section{
+
+    display: flex;
+}
+
+
+/*Guessing game */
+.guessing-title{
+   font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.number-guessing-game{
+    padding-bottom: 2em;
+}
+
+.guess-textbar{
+    width:50%;
+}
+
+.result-for-guess{
+    font-size: 1.5em;
+}
+
+/*Temp converter*/
+.celsius-radio-btn{
+   font-size: 40px;
+   width: 30%;
+   height:0.6em;
+}
+
+.fahrenheit-radio-btn{
+    border: 0;
+    font-size: 40px;
+    width: 30%;
+    height:0.6em;
+}
+
+.temp-submit{
+    border: 0;
+    width: 40%;
+    margin-top: 1em;
+   
+}
+
+#conversion-result{
+    font-size: 2em;
+}
+
+#myclock{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.downloader{
+    text-decoration: none;
+    background-color: antiquewhite;
+    padding: 0.75em 0.25em;
+   display: grid;
+   place-items: center;
+    width: 20%;
+    color: #000000;
+    border-radius: 999px;
+
+}
+
+.download-section{
+    padding: 3em;
+    display: grid;
+    place-items: center;
+}
+
+.spinner1{
+    /* background-color: #000000;*/
+     width: 30px;
+     height: 30px;
+     border: 6px solid #000000;
+     border-radius: 50%;
+     border-color: transparent black transparent black ;
+     animation: spin 1.5s ease infinite;
+     display: none;
+ }
+ 
+ .spinner0{
+     background-color: green;
+     width: 30%;
+     height: 200px;
+     border: 4px solid brown;
+ }
+ 
+ @keyframes spin{
+     to{
+         transform: rotate(360deg);
+     }
+ }
+
+ .item-section{
+    display: flex;
+justify-content: center;
+    background-color: #fff;
+ }
+
+ .every-item{
+    display: grid;
+    place-items: center;
+    background-color: #fff;
+ }
+
+ .item-name{
+    font-size: 1.5em;
+ }
+
+ .item-price{
+font-size: 1.4em;
+ }
+
+ span{
+
+ }
+
+ .item-pic{
+    width: 300px;
+    height:200px;
+    padding: 1.5em;
+    margin: 0 auto;
+ }
+
+ .black-line{
+    border:1px solid #000000;
+    width: 9%;
+    margin: 0 auto;
+    margin-top: 1.2em;
+ }
+
+ .item-status{
+  background-color: #000000;
+  color: #fff;
+  padding:0.50em 1.75em;
+  cursor: pointer;
+  text-decoration: none;
+ }
+
+ .price-wrapper{
+    display: flex;
+   gap: 0.4em;
+
+ }
+
+ .pre-price{
+    font-size: 1.4em;
+    text-decoration: line-through;
+ }

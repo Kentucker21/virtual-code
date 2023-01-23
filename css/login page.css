@@ -1,0 +1,124 @@
+*{
+   
+    margin:0px;
+    padding:0px;
+}
+    
+body{
+    background-image: url(https://img.freepik.com/free-photo/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame_1339-6364.jpg?w=2000);
+    margin-top: 17%;
+     margin-left: 28%;
+
+
+}
+.form-itself{
+    background-color:rgb(112, 114, 141);
+    width: 60%;
+    max-width:1268px;
+    min-width: 400px;
+    border-radius:70px;
+    padding: 2em 0;
+}
+form{
+    
+}
+h1{
+    margin-left: 110px;
+    font-size: 40px;
+    color: #fff;
+    white-space: nowrap;
+}
+.password,.email{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+   font-size: 20px;
+   margin-left: 100px;
+   gap: 5px;
+
+}
+.buttons{
+width:500px ;
+gap: 2px;
+margin-left: 250px;
+display: inline;
+}
+.textbar-1,.textbar-2{
+    width:200%;
+    
+    min-height: 25px;
+    border: solid 2px green;
+    
+}
+.forgot{
+    margin-left:230px;
+}
+.button-1,.button-2{
+    margin-top: 20px;
+    width:60px;
+    height:30px;
+    cursor: pointer;
+}
+.textbar-1:checked,.textbar-2:checked{
+    border-color: #c80003;
+    animation: shake .13s 3;
+}
+
+@keyframes shake{
+    0%{
+        transform: translatex(0)
+    }
+    40% {
+       transform:translatex(10px)
+    }
+    100%{
+        transform:translatex(-10px)
+    }
+
+}
+
+    
+@media (max-width:768px) 
+{
+
+
+h1{
+    margin-left: 0px;
+    padding-left:30px;
+    font-size:5vw;
+    color: #111;
+}
+ 
+.form-itself{
+  position: relative;
+    margin-top: 200px;
+    padding-top: 20px;
+    min-width:300px;
+   right: 20%;
+   padding: 30px ;
+}
+.textbar-1,.textbar-2{
+    min-width:270px;
+    height: 25px;
+    border: solid 2px green;
+
+}
+.password,.email{
+    position:relative;
+    right:20vw
+}
+.buttons{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+   right: 160px;
+
+
+}
+.forgot{
+    position: relative;
+    right:160px;
+white-space: nowrap;
+
+}
+}

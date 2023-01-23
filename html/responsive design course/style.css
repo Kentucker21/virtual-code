@@ -1,0 +1,108 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans&family=Roboto&family=Ubuntu:wght@300;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  
+  margin: 0 auto;
+  background: #23424a;
+  color: white;
+  padding: 50px 0;
+}
+.intro-content{
+  margin-right: 20em;
+}
+.intro-content h1 {
+  width: 33%;
+  
+  margin: 0 auto;
+}
+.intro-content p{
+  width: 33%;
+  margin: 0 auto;
+  
+ 
+}
+.more{
+  width:50%;
+  max-width: 600px;
+ 
+  margin:0 auto;
+}
+
+/*Challenge 5 RES Struggle*/
+.container-2{
+  background: #23424A;
+  width: 100%;
+ 
+}
+.title{
+  font-size:2.6em;
+  width: 40%;
+}
+
+.text{
+  width: 33%;
+  font-size: 1.07em;
+  padding-bottom: 2em;
+}
+.overall-text{
+ 
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inside-container-2{
+padding: 4em;
+}
+.ready-btn{
+  border-radius:31.5px;
+  font-size: 1.2em;
+  
+  padding: 0.6em 1.2em 0.6em 1.1em;
+  background: 
+  #38CFD9;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 15%;
+  min-width: 210px;
+}
+.ready-btn:hover{
+  opacity: .75;
+}
+
+.row{
+  display: flex;
+
+}
+.col{
+  width: 100%;
+
+  background-color: limegreen;
+}
+.col + .col{
+  margin-left:30px;
+}

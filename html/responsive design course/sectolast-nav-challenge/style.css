@@ -1,0 +1,342 @@
+/* Challenge
+
+   Make the navigation layout work
+   on both mobile and large screens.
+
+   Mobile-first, so mobile styles first,
+   then add the large screen styles
+   inside the existing media query
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.section-title {
+    color: #87629A;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.container {
+    width: 80%;
+    max-width: 1300px;
+    margin: -7px auto;
+    /* added for nav-toggle positioning */
+    position: relative;
+  
+}
+
+header {
+    background: #136c72;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.nav {
+    width: 100%;
+}
+
+
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+   
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+    
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+} 
+.nav__item-sign-up{
+   
+    white-space: nowrap;
+}
+
+.logo {
+   
+    margin-left: 2em;
+   
+}
+.logo-1{
+    width: 20%;
+   
+    margin-bottom: 1em;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__img {
+    margin-top: 2em;
+}
+
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.main {
+    margin-top: 3em;
+}
+
+
+.sidebar {
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    background-color: #136c72;
+
+}
+
+
+
+
+
+.nav__item{
+    list-style: none;
+   
+}
+a:hover, a:focus{
+    opacity: 0.75;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 520;
+  
+}
+
+.nav__link--button{
+    background-color: #fff;
+    color: #136c72;
+    border-radius: 100px;
+    padding: 0.25em 0.75em;
+
+}
+.nav__item-sign-up{
+    margin-top: 40px;
+}
+.nav__item {
+    margin-bottom:45px;
+}
+
+.nav__list + .nav__list{
+margin-top: 4em;
+}
+
+
+@media (min-width: 800px) {
+.container{
+    display: flex;
+   
+    max-width: 1386px;
+}
+.first-container{
+    max-width: 1400px;
+    width: 70%;
+    display: flex;
+
+}
+    header {
+        background: #136c72;
+    
+     
+     display: flex;
+     
+    }
+    a{
+        font-size: 1em;
+    }
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        height: auto;
+ 
+     align-self:center;
+     align-items: center;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .hero__text {
+        width: 62%;
+    }
+    
+    .hero__img {
+        width: 32%;
+        align-self: flex-start;
+        margin: 0;
+    }
+    
+    .primary-content {
+        width: 62%;
+    }
+
+    .sidebar {
+        width: 32%;
+    }
+    
+    .nav__list{
+        display: flex;
+       
+    }
+    .nav__list + .nav__list{
+        margin-top: 0em;
+
+        }
+
+        .nav__item-sign-up{
+            margin-top: 0px;
+            word-break: none;
+        }
+        .nav__item{
+            margin-left: 2em;
+           
+        }
+
+        .nav__list--secondary{
+           
+        }
+        .nav__item-sign-up,.nav__item-sign-in{
+            margin-top: 3em;
+        }
+        .logo{
+           
+        }
+        .logo-1{
+            width: 100%;
+            min-width: 70px;
+           
+            margin-left:-4em;
+            height: auto;
+            margin-bottom: 0;
+            
+        }
+        .container-for-nav{
+           display: flex;
+           justify-content: space-between;
+        
+     
+           
+        }
+        
+
+        .nav__list--primary{
+           
+           
+          
+           display: flex;
+          margin: 0 auto;
+          margin-top:2em;
+        }
+
+
+
+        
+
+       
+}
+@media ( min-width:836px){
+   .nav__item-sign-in{
+    white-space: nowrap;
+   }
+}

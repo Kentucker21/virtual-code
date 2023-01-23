@@ -1,0 +1,92 @@
+
+*{
+    background-color:#7FFFD4 ;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    
+}
+.ken_search{
+    border: 2px solid pink;
+    width:100%;
+    max-width:1268px;
+    margin: 0 auto;
+
+}
+.search-box{
+   /*position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,50%); */
+    background: #2f3640;
+    height: 40px;
+    border-radius:40px;
+    padding: 10px;
+    width:3%; 
+    margin-left: 500px;
+   
+}
+.search-box:hover>.search-text{
+    width:240px;
+    padding: 0 6px;
+}
+
+
+.search-box:hover>.search-btn{
+    color:white;
+
+}
+
+.search-btn{
+   
+    color:black;
+    min-width: 40px;
+    height: 40px;
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+/*WHERE I LEFT OFF*/
+.search-text{
+    border:yes;
+    background:#2f3640;
+    outline:1;
+    
+    padding:0;
+    color:white;
+    font-size: 16px;
+line-height: 40px;
+width: 240px;
+transition: 0.4s;
+
+}
+h1{ 
+    position: relative;
+
+    left: 42%;
+    margin-top:22%;
+    font-family:'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight:500%;
+    background:linear-gradient(-45deg,white,blue,red);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s ease-in-out infinite alternate-reverse forwards ;
+    background-size: 400%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    0%{
+        background-position: 400%;
+    }
+}
+h2{
+    margin-top:20rem;
+}
