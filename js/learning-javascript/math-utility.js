@@ -26,3 +26,34 @@ export const PI=3.14159;
     return array
     
     }*/
+
+
+    //Capitalize first letter
+
+
+/*    let namies=['red','brown','green']
+
+
+for(names of namies){
+    let names1=names.charAt(0).toUpperCase()+ names.slice(1)
+    console.log(names1)
+    
+}*/
+
+
+//create grid
+/*for(let i=1;i<=3;i++){
+    
+    for(let j=1; j<=3;j++){
+        let created=document.createElement('div');
+    created.style.backgroundColor='lightgreen'
+    created.style.width='300px'
+    created.style.height='300px'
+    created.style.border='1px solid'
+
+    
+    outerr.appendChild(created)
+    }
+    
+    
+}*/

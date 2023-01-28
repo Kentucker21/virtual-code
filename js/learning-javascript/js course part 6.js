@@ -109,84 +109,7 @@ fruitss.insertBefore(neewListItem,fruitss.getElementsByTagName('li')[1])//add el
 
 
 
-//Item shuffle test
-/*let item1Pic1=document.querySelector('#item-1-pic-id')
-let item1Pic2=document.querySelector('#item-2-pic-id')
-let item1Pic3=document.querySelector('#item-3-pic-id')
-
-let itemPrice1=document.querySelector('#item-1-price-id')
-let itemPrice2=document.querySelector('#item-2-price-id')
-let itemPrice3=document.querySelector('#item-3-price-id')
-
-itemName1=document.querySelector('#item-1-name-id')
-itemName2=document.querySelector('#item-2-name-id')
-itemName3=document.querySelector('#item-3-name-id')
-
-itemStatus=document.querySelectorAll('.item-status')
-
-class theProducts{
-    constructor(name,price,prePrice,){
-        this.name=name
-        this.price=price
-        this.prePrice=prePrice
-
-    }
-}
-
-
- 
- function shuffle(array){
-    let currentIndex=array.length
-    
-    while(currentIndex !=0){
-      let randomIndex=Math.floor(Math.random()*array.length)
-      currentIndex=currentIndex-1;
-    
-      let temp=array[currentIndex];
-      array[currentIndex]=array[randomIndex];
-      array[randomIndex]=temp;
-    }
-    
-    return array
-    
-    }
-
-let item1=[item1Pic1,new theProducts('YEEZYFOAMS',89,189)]
-
-var item2=[item1Pic2,new theProducts('YEEZY SLIDE RESIN',75)]
-
-var item3=[item1Pic3,new theProducts('YEEZY SLIDES BROWN',98)]
-
-
-
-var allMyItems=[ item1,item2,item3]
-shuffle(allMyItems)
-console.table(allMyItems);
-
-
-itemName1.textContent=allMyItems[0][1].name
-itemPrice1.textContent=`$${allMyItems[0][1].price}`
-item1Pic1.textInnerHTML=allMyItems[0][0]
-
-itemName2.textContent=allMyItems[1][1].name
-itemPrice2.textContent=`$${allMyItems[1][1].price}`
-item1Pic2.textInnerHTML=allMyItems[1][0]
-
-itemName3.textContent=allMyItems[2][1].name
-itemPrice3.textContent=`$${allMyItems[2][1].price}`
-item1Pic3.textInnerHTML=allMyItems[2][0]
-
-
-let Pic=document.createElement('img')
-
-Pic.src='../html/yeezy.jpg'
-
-
-document.getElementById('firstpic').prepend(Pic)
-Pic.style.width='200px' */
-
-
-function isevenisodd(arr){
+/*function isevenisodd(arr){
   let isodd=[];
   let iseven=[];
 
@@ -203,5 +126,146 @@ function isevenisodd(arr){
 
 let numbe=[2,4,6,9,13]
 
-console.log(isevenisodd(numbe))
-k
+evenOdd=isevenisodd(numbe)
+
+document.getElementById('display').innerHTML=`even:${evenOdd[0]} odd:${evenOdd[1]}`
+console.log(evenOdd)*/
+
+
+//ADD/CHANGE CSS PROPERTIES
+let menuTitle=document.getElementById('menu-title')
+menuTitle.style.backgroundColor='rgb(50,200,250)'
+menuTitle.style.fontSize='3em'
+menuTitle.style.fontFamily='consolas'
+menuTitle.style.textAlign='center'
+menuTitle.style.border='1px solid #000000'
+menuTitle.style.display='block'
+
+
+//EVENTS
+
+//onclick
+function doSomething(){
+    alert('you did something')
+}
+
+let EventId=document.getElementById('eventbutton')
+
+/*EventId.addEventListener('click',()=>{
+    alert('you did something!')
+})*/
+
+
+//onload
+/*EventId.onclick=doSomething
+
+let boddy=document.body;
+EventId.onload=doSomething()*/
+
+
+//onchange
+/*let eventText=document.getElementById('eventtextbox')
+eventText.onchange=upper
+
+function upper(){
+   eventText.value=eventText.value.charAt(0).toUpperCase()+ eventText.value.slice(1)
+}
+//mousehover
+let mousy=document.getElementById('mouseover')
+
+mousy.onmouseover=changehover;
+mousy.onmouseout=reverthover;
+mousy.onmousedown=holdhover;
+mousy.onmouseup=reverthover
+
+function changehover(){
+    mousy.style.backgroundColor='red'
+}
+
+function reverthover(){
+    mousy.style.backgroundColor='lightgreen'
+}
+function holdhover(){
+    mousy.style.backgroundColor='orange'
+} */
+
+
+
+
+//ADDEVENTLISTENER(EVENT,FUNCTION,useCAPTURE)
+
+//you can add as many event handlers to one element
+//even the sae event that invokes different functions
+
+/*const listening=document.getElementById('listening-id')
+const outerListening=document.getElementById('AEL-id')*/
+/*listening.addEventListener('mouseover',()=>{
+    listening.style.backgroundColor='blue'
+})
+listening.addEventListener('mouseout',()=>{
+    listening.style.backgroundColor='lightgreen'
+})*/
+
+/*listening.addEventListener('click',changeBlue)
+outerListening.addEventListener('click',changeBlue,true)
+
+function changeBlue(){
+    alert(`you select ${this.id}`)
+ this.style.backgroundColor='blue'
+}*/
+
+
+
+//SHOW/HIDE HTML ELEMENTS
+
+/*const toggleImage=document.getElementById('mytoggleimage')
+const togglebtn=document.getElementById('togglebtn')
+
+togglebtn.addEventListener('click',()=>{
+   /* if(toggleImage.style.display=='none'){
+        toggleImage.style.display='block'
+    } else{
+        toggleImage.style.display='none'
+    }*/
+
+    /* if(toggleImage.style.visibility=='hidden'){
+        toggleImage.style.visibility='visible'
+    } else{
+        toggleImage.style.visibility='hidden'
+    }  
+
+})*/
+
+
+
+//DETECT KEY PRESSES
+addEventListener('keydown',(event)=>{
+    console.log(event.key)
+})
+
+const Keypress=document.getElementById('keypress')
+
+window.addEventListener('keydown',move)
+x=0
+y=0
+function move(event){
+    switch(event.key){
+        case 'ArrowDown':
+            y+=10;
+            Keypress.style.top=y+'px';
+            break;
+            case 'ArrowUp':
+                y-=10;
+                Keypress.style.top=y+'px';
+                break;
+                case 'ArrowLeft':
+                    x-=10
+                    Keypress.style.left=x+'px'
+                    break;
+                    case 'ArrowRight':
+                        x+=10;
+                        Keypress.style.left=x+'px'
+                        break;
+
+    }
+}
