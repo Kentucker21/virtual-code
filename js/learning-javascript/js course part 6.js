@@ -239,7 +239,7 @@ togglebtn.addEventListener('click',()=>{
 
 
 //DETECT KEY PRESSES
-addEventListener('keydown',(event)=>{
+/*addEventListener('keydown',(event)=>{
     console.log(event.key)
 })
 
@@ -268,4 +268,4 @@ function move(event){
                         break;
 
     }
-}
+}*/
