@@ -269,3 +269,80 @@ function move(event){
 
     }
 }*/
+
+
+//JS ANIMATIONS
+/*const animationBtn=document.getElementById('animate-btn')
+const myAnimation=document.getElementById('tobeanimated')
+
+animationBtn.addEventListener('click',animate)
+
+function animate(){
+
+    
+  let timerId=null;
+  x=0;
+  y=0;
+  let degrees=0;
+  let scaleX=1;
+  let scaleY=0;
+   timerId=setInterval(frames,4) */
+
+
+   function frames(){
+   /* if(y<=-200){
+        clearInterval(timerId)
+    }else{
+        y-=1;
+        myAnimation.style.top=y+'px'
+    }
+   }*/
+
+   //Slide animation
+
+    /*if(y>=200||x>=200){
+        clearInterval(timerId)
+    }else{
+        x+=1
+        y+=1;
+        myAnimation.style.left=x+'px'
+        myAnimation.style.top=y+'px'
+    }
+   }*/
+
+  
+   //Rotation
+
+   /*if(degrees>=360){
+    clearInterval(timerId)
+   }else{
+    degrees+=1
+    myAnimation.style.transform='RotateY('+degrees+'deg)'
+   }
+   }*/
+
+
+   //rotate diagonally
+  /* if(x>=200||y>=200){
+    clearInterval(timerId)
+   }else{
+    degrees+=5 //controls the speed of rotation
+    x+=1
+    y+=1
+    myAnimation.style.transform='RotateZ('+degrees+'deg)'
+    myAnimation.style.top=y+'px'
+    myAnimation.style.left=x+'px'
+   }*/
+
+ 
+   //Scale
+   /*if(scaleX>=2||scaleY>=2){
+    clearInterval(timerId)
+   } else{
+    scaleY+=0.01
+    scaleX+=0.01
+    myAnimation.style.transform='scale('+scaleX+','+scaleY+')'
+   }*/
+
+   }
+//}
