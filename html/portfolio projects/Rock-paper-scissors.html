@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/portfolio projects/rock-paper-scissors.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+<div class="game-body-container" id="game-containerId">
+ <section class="gamewindow" id="game-windowId">
+  <h1 class="gametitle" id="game-titleid"> <span class="black">Lets Play!</span>  <br>
+   <span class="brown">Rock</span> 
+   <span class="white">Paper</span>
+    <span class="blue">Scissors</span> 
+  </h1>
+
+  <div class="score-wrapper">
+   <div class="playerscore">
+    <h3 class="playertitle">Players</h3>
+    <div class="playerwin" id="playerwinId">0</div>
+   </div>
+    <div class="cpuscore">
+        <h3 class='cputitle'>Cpu</h3>
+    <div class="Cpuwin" id="cpuwinId">0</div>
+    </div>
+    
+  </div>
+  
+  <section class="playerswindow" id="players-windowId">
+     
+    <div class="gameflexer">
+    <div class="playerside" id="playersideId">
+      <img src="/Photos/player-rock.jpg" alt="" class="player-rock-img" id="player-rock-imgId">
+      <img src="/Photos/player-paper.jpg" alt="" class="player-paper-img" id="player-paper-imgId">
+      <img src="/Photos/player-scissors.jpg" alt="" class="player-scissors-img" id="player-scissors-imgId">
+    </div>
+
+     <div class="versuslogo" id="versus-logoId">
+        <img src="/Photos/Vs.jpg" alt="" class="vs-img" id="vs-imgId">
+     </div>
+
+    <div class="CPUside" id="CPU-sideId">
+        <img src="/Photos/cpu-rock.jpg" alt="" class="CPU-rock-img" id="CPU-rock-imgId">
+        <img src="/Photos/cpu-paper.jpg" alt="" class="CPU-paper-img" id="CPU-paper-imgId">
+        <img src="/Photos/cpu-scissors.jpg" alt="" class="CPU-scissors-img" id="CPU-scissors-imgId">
+    </div>
+</div>
+    <div class="gameverdict" id="game-verdictId">
+      
+    </div>
+
+    <div class="gamebuttons" id="game-buttonsId">
+        <h2>Choose your play!</h2>
+        <button class="rockbutton buttonstyle" id="rock-buttonId">Rock</button>
+        <button class="paperbutton buttonstyle" id="paper-buttonId">Paper</button>
+        <button class="scissorsbutton buttonstyle" id="scissors-buttonId">Scissors</button>
+    </div>
+  </section>
+ </section>
+
+</div>
+
+<script src="/js/portfolio projects/rock-paper-scissors.js"></script>
+</body>
+</html>

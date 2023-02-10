@@ -48,3 +48,47 @@
     background-color: brown;
     margin: 0 auto;
 }
+
+#drawAPI{
+    border: 1px solid ;
+    background-color: skyblue;
+}
+
+#chess-board-section{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+   display: flex;
+  
+    
+}
+
+#red-tile{
+    background-color: red;
+    width: 125px;
+    height: 125px;
+}
+
+#black-tile{
+    background-color: blue;
+    width: 125px;
+    height: 125px;
+
+}
+
+#checker-piece{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.tile1{
+    display: flex;
+    justify-content: center;
+}
+
+#mywindow{
+    width: 1000px;
+    height: 1000px;
+    background-color: skyblue;
+}

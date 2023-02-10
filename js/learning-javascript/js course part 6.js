@@ -271,7 +271,9 @@ function move(event){
 }*/
 
 
+
 //JS ANIMATIONS
+
 /*const animationBtn=document.getElementById('animate-btn')
 const myAnimation=document.getElementById('tobeanimated')
 
@@ -346,3 +348,212 @@ function animate(){
 
    }
 //}
+
+
+
+//CANVAS API 
+
+const canvas=document.getElementById('drawAPI')
+let context=canvas.getContext('2d')
+
+//draw lines on canvas
+/*context.strokeStyle='white'
+context.lineWidth=5;
+context.beginPath();
+context.moveTo(0,0)
+context.lineTo(250,250)
+context.lineTo(250,500)
+
+context.moveTo(500,0)
+context.lineTo(250,250)
+
+context.stroke()*/
+
+//draw triangle
+/*context.fillStyle='yellow'
+context.strokeStyle='grey'
+context.lineWidth=5;
+context.beginPath()
+context.moveTo(250,0)
+context.lineTo(0,250)
+context.lineTo(500,250)
+context.lineTo(250,0)
+context.stroke()
+context.fill()*/
+
+//draw rectangle
+/*context.fillStyle='yellow'
+context.fillRect(0,0,250,250)
+context.strokeRect(0,0,250,250)
+
+context.fillStyle='blue'
+context.fillRect(0,250,250,250)
+context.strokeRect(0,0,250,250)
+
+
+context.fillStyle='green'
+context.fillRect(250,0,250,250)
+context.strokeRect(250,0,250,250)
+
+
+context.fillStyle='black'
+context.fillRect(250,250,250,250)
+context.strokeRect(250,250,250,250)*/
+
+
+//draw circle
+//(x,y,radius,sAngle,eAngle,counterClockwise)
+/*context.fillStyle='lightblue'
+context.strokeStyle='darkblue'
+context.lineWidth=4;
+context.beginPath()
+context.arc(250,250,200,0,2*Math.PI)
+context.stroke()
+context.fill()
+
+
+//draw text
+context.font='50px MV Boli'
+context.fillStyle='grey'
+context.textAlign='center'
+context.fillText('You Win!!',canvas.width/2,canvas.height/2) */
+
+
+
+
+//WINDOW-interface used to talk to the web browser
+//       the DOM is a property of a window
+
+/*console.dir(window)
+console.log(window.innerHeight)
+console.log(window.innerWidth)
+console.log(window.scrollX)
+console.log(window.scrollY)
+console.log(window.location.href);
+//.location.href='https://google.com';
+console.log(window.location.hostname);
+console.log(window.location.pathname);
+
+const windowButton=document.querySelector('#windowbutton')
+
+windowButton.addEventListener('click',()=>{
+// window.open('https://google.com')
+//window.close()
+//window.print()
+//window,alert('you clicked this button')
+//window.confirm('press OK to continue')
+let age=window.prompt('enter age')
+if(age<18){
+    window.alert('you must be over 18 to enter this site')
+    window.close()
+}
+}) */
+
+
+
+//COOKIES-a small text file stored on your computer
+//        used to remember information about the user
+//        saved in name=value pairs
+
+/*console.log(navigator.cookieEnabled);
+
+
+document.cookies='firstName=Kenny;expires=Sun, 1 January 2019 12:00:00 UTC;path=/'
+document.cookies='lastName=Star;expires=Sun, 1 January 2020 12:00:00 UTC;path=/'
+//console.log(document.cookie);
+
+function setCookie(name,value,daysToLive){
+    const myDatee=new Date()
+    myDatee.setTime(myDatee.getTime()+(daysToLive*24*60*60*1000))
+  
+
+   let expire='expires='+myDatee.toUTCString()
+
+   document.cookie=`${name}=${value};${expire};path=/`
+   
+}
+
+function deleteCookie(name){
+ return setCookie(name,null,null)
+}
+
+function getCookie(name){
+    let dcoded=decodeURIComponent(document.cookie)
+    let cArray=dcoded.split('; ');
+    let result;
+    cArray.forEach((element)=>{
+        if(element.indexOf(name)==0){
+             result=element.substring(name.length+1);
+
+        }
+    })
+
+    return result
+   
+
+}
+
+setCookie('email','kenkoar3x2@gmail.com',365)
+setCookie('lastName','squidward',365)
+deleteCookie('emai3')
+deleteCookie('emaile')
+//deleteCookie('email')
+deleteCookie('K')
+
+
+console.log(getCookie('email'))
+
+
+
+
+//cookies section
+let firstText=document.getElementById('firstText')
+let lastText=document.getElementById('lastText')
+let submitCookies=document.getElementById('submitcookiebtn')
+let getCookiesBtn=document.getElementById('getcookiebtn')
+
+submitCookies.addEventListener('click',()=>{
+    setCookie('firstName1',firstText.value,365)
+    setCookie('lastName2',lastText.value,365)
+    console.log(document.cookie)
+})
+
+getCookiesBtn.addEventListener('click',()=>{
+    firstText.value=getCookie('firstName1')
+    lastText.value=getCookie('lastName2')
+})
+
+
+
+deleteCookie('firstName2')
+deleteCookie('firstname1')
+//deleteCookie('lastName2')
+deleteCookie('lastName')
+deleteCookie('firstname')
+
+console.log(Date.now()) */
+
+
+
+
+const phoneBook=[
+    {name:'kenny',
+      tel:18762956906},
+    {name:'Zan',
+      tel:18764804625},
+      {name:'mom',
+      tel:18764804625}
+    
+]
+
+
+function phoneSearch(names){
+    for(i=0;i<phoneBook.length;i++){
+        if(phoneBook[i].name.includes(names)){
+            return phoneBook[i]
+        }
+    }
+}
+
+console.log(phoneSearch('kenny'))
+console.log(phoneBook[0].name)

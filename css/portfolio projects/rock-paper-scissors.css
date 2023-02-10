@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #be97c6;
+}
+img{
+    width: 100%;
+}
+
+.game-body-container{
+    width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+ 
+}
+.gamewindow{
+    width: 60%;
+    margin: 0 auto;
+    
+    text-align: center;
+    align-self: center;
+    background-color:/*lightblue*/ #8661c1;
+    border-radius: 30px;
+    
+}
+
+.gametitle{
+    font-size: 2.5em;
+    color: #be97c6;
+}
+
+.black{
+    color:#4b5267;
+}
+.brown{
+    color:  #663839;
+}
+.white{
+    color: #fff;
+}
+.blue{
+    color: lightblue;
+}
+h2{
+    color: #4b5267;
+}
+
+.gameflexer{
+    display: flex;
+    border: 1px solid orange;
+    width: 90%;
+    align-self: center;
+    background-color: #fff;
+    padding: 1em
+}
+
+.playerswindow{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.CPU-paper-img{
+
+}
+
+.playerside{
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+.CPUside{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+
+.gamebuttons{
+   
+    padding-bottom: 1em;
+}
+.buttonstyle{
+   font-size:1.1em;
+    padding: 0.45em  2em;
+    border-radius: 7px;
+    
+    font-weight: bold;
+background-color:#be97c6;
+    color: #fff;
+    transform: scale(1);
+}
+
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    } 25%{
+        transform: scale(1.11);
+    } 100% {
+        transform: scale(1);
+    }
+}
+.buttonstyle:hover{
+    cursor: pointer;
+    animation:pulse 0.5s linear infinite;
+   /*transition: 0.2s;*/
+}
+
+.gameverdict{
+    font-family: 'consolas';
+    font-size: 2em;
+    margin-top: 1em;
+   font-weight: bold;
+}
+/*IMages*/
+.versuslogo{
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.CPU-rock-img{
+  visibility:hidden;
+}
+
+.CPU-paper-img{
+ visibility: hidden;
+ 
+}
+
+.CPU-scissors-img{
+visibility: hidden;
+
+ 
+}
+
+.player-rock-img{
+    visibility: hidden;
+}
+
+.player-paper-img{
+    visibility: hidden;
+}
+
+.player-scissors-img{
+    visibility: hidden;
+}
+
+/*score*/
+.score-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.cpuscore{
+    margin-right: 2em;
+    width: 20%;
+}
+
+.playerscore{
+    margin-right: 1em;
+    width: 50%;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+    width: 50%;
+}
+
+.playerwin{
+    font-size:2em;
+    width: 50%;
+}
+
+.Cpuwin{
+    font-size: 2em;
+    width: 50%;
+}
+
+.cputitle{
+    color:red;
+}
+
+.playertitle{
+ color: green;
+}

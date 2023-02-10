@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#000000;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.stopWatchprogram{
+    margin: 0 auto;
+    background-color: black;
+    width: 40%;
+    margin-top: 150px;
+    padding: 2em;
+}
+
+.stopWatchDisplay-style{
+    color:green;
+    font-size: 4em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: consolas,monospace;
+}
+
+.buttons+.buttons{
+    margin-left: 0.7em;
+}
+
+.mybuttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.buttons{
+    font-size: 1.1em;
+    padding: 0.25em 0.75em ;
+    color: red;
+    font-family: consolas,monospace;
+    border-radius: 100px;
+    background-color: black;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.buttons:hover{
+    opacity:0.75;
+    cursor: pointer;
+   
+}

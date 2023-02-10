@@ -57,3 +57,124 @@ for(names of namies){
     
     
 }*/
+
+
+
+/*function frames(){
+     if(y<=-200){
+         clearInterval(timerId)
+     }else{
+         y-=1;
+         myAnimation.style.top=y+'px'
+     }
+    }
+ 
+    //Slide animation
+ 
+     if(y>=200||x>=200){
+         clearInterval(timerId)
+     }else{
+         x+=1
+         y+=1;
+         myAnimation.style.left=x+'px'
+         myAnimation.style.top=y+'px'
+     }
+    
+ 
+   
+    //Rotation
+ 
+    if(degrees>=360){
+     clearInterval(timerId)
+    }else{
+     degrees+=1
+     myAnimation.style.transform='RotateY('+degrees+'deg)'
+    }
+    
+ 
+ 
+    //rotate diagonally
+    if(x>=200||y>=200){
+     clearInterval(timerId)
+    }else{
+     degrees+=5 //controls the speed of rotation
+     x+=1
+     y+=1
+     myAnimation.style.transform='RotateZ('+degrees+'deg)'
+     myAnimation.style.top=y+'px'
+     myAnimation.style.left=x+'px'
+    }
+ 
+  
+    //Scale
+    if(scaleX>=2||scaleY>=2){
+     clearInterval(timerId)
+    } else{
+     scaleY+=0.01
+     scaleX+=0.01
+     myAnimation.style.transform='scale('+scaleX+','+scaleY+')'
+    }
+ 
+    
+*/
+
+
+//Checkers
+
+const checker=document.getElementById('checker-piece')
+
+const nextMove=document.querySelector('.gotothis')
+const secondMove=document.querySelector('.gotothis2')
+nextMove.addEventListener('click',move)
+secondMove.addEventListener('click',move2)
+
+
+
+function move(){
+    let timerId=null
+     x=0;
+     y=0;
+
+    timerId=setInterval(slide,2)
+
+    function slide(){
+        if(x>=125||y>=125){
+            clearInterval(timerId);
+        }else{
+            x+=1;
+            y+=1;
+            checker.style.top=y+'px'
+            checker.style.left=x+'px'
+        }
+    }
+}
+function move2(){
+    let timerId=null
+     x2=125;
+     y2=125;
+
+    timerId=setInterval(slide2,2)
+
+    function slide2(){
+        if(x2<=0||y>=250){
+            clearInterval(timerId);
+        }else{
+            x2-=1;
+           y2+=1;
+           
+            checker.style.left=x2+'px'
+            checker.style.top=y2+'px'
+        }
+    }
+}
+
+
+//transform to object
+let numbs=[1,2,3]
+function transformToObjects(arr){
+    return arr.map((num)=>{
+        let obj={val:num}
+        return obj
+    })
+}
+console.log(transformToObjects([1,2,3]));
