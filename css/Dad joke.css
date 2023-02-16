@@ -1,0 +1,73 @@
+*{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+}
+
+main{
+  background-color:gainsboro;
+}
+.main-Container{
+    margin: 0 auto;
+    width: 70%;
+  
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.dadjokedisplay{
+  text-align: center;
+  background-color: rgb(22, 206, 206);
+  padding: 2em;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.8em;
+  /*border-radius: 3em;*/
+  border-radius: 10px 100px/120px;
+  border-radius: 50% 20%/10% 4;
+}
+
+.gendadjoke{
+    padding:0.45em 1.95em ;
+    border-radius: 99px;
+    font-size: 1.3em;
+
+    margin-top: 1em;
+    border: 1px solid blueviolet;
+
+    background-color: rgb(22, 206, 206);
+    color: #fff;
+ 
+}
+
+.gendadjoke:hover{
+    opacity: 0.75;
+    transform: scale(1.05);
+}
+.buttons{
+   display: flex;
+    
+    justify-content: center;
+}
+
+.instructions{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 0.7em;
+}
+
+.fa-clipboard{
+    font-size: 2em;
+    text-align: end;
+    
+    width: 55%;
+    margin: 0 auto;
+    cursor: pointer;
+}

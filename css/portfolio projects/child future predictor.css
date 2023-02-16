@@ -1,0 +1,125 @@
+*{
+    font-family: lora,san-serif;
+}
+
+body{
+    background-color: #f2fdff;
+}
+
+.Childpredictorwindow{
+    
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.App-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CFD-title{
+    text-align: center;
+    font-size: 2.7em;
+    margin:0;
+}
+
+.instructions{
+    font-size: 1.3em;
+   margin-top: 1em;
+}
+.childBirthDate{
+    width: 40%;
+    padding: 0.55em ;
+    border-radius: 7px;
+    outline: none;
+    border: 0.2px solid;
+    min-width: 200px;
+    font-size: 1em;
+}
+
+.childBirthDate:focus{
+    border:1px solid blue;
+}
+
+.submit-age{
+    width: 10%;
+    min-width: 80px;
+    padding: 0.35em 0.75em;
+    border-radius: 7px;
+    margin-top: 1em;
+    font-size: 1em;
+    background-color: navy;
+    color: #fff;
+   
+}
+
+.submit-age:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.ifbaby{
+    font-size: 1.7em;
+    margin-top: 2em;
+    display: none;
+}
+
+.Date-entered{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
+    border-bottom: 4px solid black;
+   width: 50%;
+   
+ 
+}
+
+.resultsfont{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.kindergarten{
+    background-color: yellow;
+}
+
+.highschool{
+background-color: pink;
+padding: 0.25em;
+}
+
+.legal-drinking-age{
+background-color: orangered;
+}
+
+.college{
+ background-color: rgb(233, 139, 153);
+}
+
+.Forty{
+background-color: lightgreen;
+}
+
+.retirement{
+background-color: grey;
+}
+
+.spinner1{
+    /* background-color: #000000;*/
+     width: 300px;
+     height: 300px;
+     border: 6px solid #000000;
+     border-radius: 50%;
+     border-color: transparent black transparent black ;
+     animation: spin 2s ease infinite;
+     display: none;
+ }
+
+ @keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}

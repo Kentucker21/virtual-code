@@ -133,23 +133,23 @@ console.log(evenOdd)*/
 
 
 //ADD/CHANGE CSS PROPERTIES
-let menuTitle=document.getElementById('menu-title')
+/*let menuTitle=document.getElementById('menu-title')
 menuTitle.style.backgroundColor='rgb(50,200,250)'
 menuTitle.style.fontSize='3em'
 menuTitle.style.fontFamily='consolas'
 menuTitle.style.textAlign='center'
 menuTitle.style.border='1px solid #000000'
-menuTitle.style.display='block'
+menuTitle.style.display='block' */
 
 
 //EVENTS
 
 //onclick
-function doSomething(){
+/*function doSomething(){
     alert('you did something')
 }
 
-let EventId=document.getElementById('eventbutton')
+let EventId=document.getElementById('eventbutton')*/
 
 /*EventId.addEventListener('click',()=>{
     alert('you did something!')
@@ -353,8 +353,8 @@ function animate(){
 
 //CANVAS API 
 
-const canvas=document.getElementById('drawAPI')
-let context=canvas.getContext('2d')
+/*const canvas=document.getElementById('drawAPI')
+let context=canvas.getContext('2d')*/
 
 //draw lines on canvas
 /*context.strokeStyle='white'
@@ -536,7 +536,7 @@ console.log(Date.now()) */
 
 
 
-const phoneBook=[
+/*const phoneBook=[
     {name:'kenny',
       tel:18762956906},
     {name:'Zan',
@@ -556,4 +556,139 @@ function phoneSearch(names){
 }
 
 console.log(phoneSearch('kenny'))
-console.log(phoneBook[0].name)
+console.log(phoneBook[0].name)*/
+
+
+
+
+//ASYNC and Promises and callbacks
+
+//callbacks
+/*console.log('start');
+function loginUser(email,password,callback){
+    setTimeout(()=>{
+        console.log('now we have the data')
+        callback({useremail:email})
+    },3000)
+}
+
+function getUserVideos(email,callback){
+    setTimeout(()=>{
+     callback( ['video1','video2','video3'])
+    },1000)
+}
+
+const user=loginUser('keneilwatson0@gmail.com',123456,(user)=>{
+   console.log(user);
+   getUserVideos(user.useremail,(videos)=>{
+    console.log(videos)
+   })
+}) */
+
+
+console.log('finish');
+
+
+//promises
+
+/*let newPromise=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        //resolve({user:'ed'});
+        reject(new Error('user not logged in'))
+
+    },2000)
+})
+
+newPromise.then((user)=>{
+ console.log(user);
+}).catch((error)=>{
+    console.log(error)
+})
+
+//refactoring promises
+function loginUser(email,password){
+    return new Promise( (resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('now we have the data')
+            resolve({userEmail:email})
+        }
+        ,3000) }  )
+    }
+    
+   
+
+
+function getUserVideos(email){
+
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve( ['video1','video2','video3'])
+           },1000)
+    })
+   
+}
+
+
+
+loginUser('ed','bumba').then((user)=>{
+    console.log(user)
+    
+})
+
+getUserVideos('ed').then(videos=>console.log(videos)) */
+
+
+//promise.all
+//Promise.all([loginUser('ken','bumba'),getUserVideos('ed')]).then((result)=>{console.log(result);})
+
+/*let yt=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log('getting stuff from youtube');
+        resolve({videos:[1,2,3,4]})
+    },2000)
+})
+
+let fb=new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+    console.log('getting stuff from fb');
+    resolve({user:'name'})
+    },2000)
+    
+})
+
+Promise.all([fb,yt]).then((results)=>{console.log(results);})
+
+//ASYNC
+function loginUser(email,password){
+    return new Promise( (resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('now we have the data')
+            resolve({userEmail:email})
+        }
+        ,3000) }  )
+    }
+    
+   
+
+
+function getUserVideos(email){
+
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve( ['video1','video2','video3'])
+           },1000)
+    })
+   
+}
+ */
+
+
+
+
+ /*async function displayUsers(){
+ let logged= await loginUser('ed','bumba');
+ let videos=await getUserVideos(logged.userEmail)
+ console.log(logged,videos);
+}
+
+displayUsers()*/
