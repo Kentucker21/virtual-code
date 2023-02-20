@@ -31,25 +31,4 @@ function displayJoke(joke){
 }
 
 
-/*async function memes(){
-    let getMemes= await fetch('http://api.imgflip.com/get_memes',{
-        method:'GET',
-        headers:{Accept:'application/json'}
-    })
-
-    let datas= await getMemes.json();
-    let memesArray=datas.data.memes
-   
-    console.log(memesArray[1]);
-    showImage()
-
-    function showImage(url){
-        let random=Math.floor(Math.random()*99)
-        console.log(random);
-         url=memesArray[random].url
-         img.src=url
-        }
-}
-
-memes()*/
 

@@ -178,3 +178,52 @@ function transformToObjects(arr){
     })
 }
 console.log(transformToObjects([1,2,3]));
+
+
+//API practice Create classes dynamically
+/*async function memes(){
+    let getMemes= await fetch('http://api.imgflip.com/get_memes',{
+        method:'GET',
+        headers:{Accept:'application/json'}
+    })
+
+    let datas= await getMemes.json();
+    let memesArray=datas.data.memes
+   
+    console.log(memesArray[1]);
+
+    let Arr10=[]
+    for(i=0;i<=9;i++){
+      Arr10.push(memesArray[i])
+    }
+    console.log(Arr10);
+    
+    Arr10.forEach((element)=>{
+      let gridmemes=Createelement('img',AppendClass,'','allmemes')
+    
+        let url=element.url
+        console.log(url);
+        console.log(gridmemes);
+       gridmemes.src=url
+       
+    })
+
+    /*function showImage(url){
+        let random=Math.floor(Math.random()*99)
+        console.log(random);
+         url=memesArray[random].url
+         img.src=url
+        }*/
+/*}
+
+memes()
+
+let AppendClass=document.querySelector('.Appendto')
+
+function Createelement(elementType,appendTo,textContents,classAdd){
+  let element=document.createElement(elementType)
+  element.textContent=textContents;
+  element.classList.add(classAdd)
+  appendTo.appendChild(element)
+  return element
+}*/

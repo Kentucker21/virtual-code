@@ -71,3 +71,16 @@ h1{
     margin: 0 auto;
     cursor: pointer;
 }
+
+.allmemes{
+    background-color: red;
+    width: 20%;
+    object-fit:fill;
+   
+}
+
+.Appendto{
+    display: flex;
+    flex-wrap: wrap;
+
+}
